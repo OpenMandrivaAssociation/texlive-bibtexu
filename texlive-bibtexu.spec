@@ -16,14 +16,12 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires:	texlive-bibtexu.bin
-Conflicts:	texlive-texmf <= 20110705-3
 
 %description
 TeXLive bibtexu package.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -32,5 +30,3 @@ TeXLive bibtexu package.
 %build
 
 %install
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
