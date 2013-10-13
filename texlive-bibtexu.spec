@@ -1,11 +1,11 @@
-# revision 26693
+# revision 29743
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-bibtexu
-Version:	20120807
+Version:	20131013
 Release:	1
 Summary:	TeXLive bibtexu package
 Group:		Publishing
@@ -23,10 +23,10 @@ TeXLive bibtexu package.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdir}/doc/bibtexu/00readme.txt
-%doc %{_texmfdir}/doc/bibtexu/HISTORY
-%doc %{_texmfdir}/doc/bibtexu/csfile.txt
-%doc %{_texmfdir}/doc/bibtexu/file_id.diz
+%doc %{_texmfdistdir}/doc/bibtexu/00readme.txt
+%doc %{_texmfdistdir}/doc/bibtexu/HISTORY
+%doc %{_texmfdistdir}/doc/bibtexu/csfile.txt
+%doc %{_texmfdistdir}/doc/bibtexu/file_id.diz
 
 #-----------------------------------------------------------------------
 %prep
@@ -36,22 +36,4 @@ TeXLive bibtexu package.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120807-1
-+ Revision: 812075
-- Update to latest release.
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
-+ Revision: 749695
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
-+ Revision: 720153
-- texlive-bibtexu
-- texlive-bibtexu
-- texlive-bibtexu
-- texlive-bibtexu
-
+cp -fpar texmf-dist %{buildroot}%{_datadir}
