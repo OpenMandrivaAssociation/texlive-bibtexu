@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-bibtexu
 Version:	20131013
-Release:	5
+Release:	6
 Summary:	TeXLive bibtexu package
 Group:		Publishing
 URL:		http://tug.org/texlive
