@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-bibtexu
-Version:	20171101
+Version:	20180303
 Release:	1
 Summary:	TeXLive bibtexu package
 Group:		Publishing
