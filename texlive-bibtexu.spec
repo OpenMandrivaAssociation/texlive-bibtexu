@@ -1,18 +1,12 @@
-# revision 29743
-# category TLCore
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
 Name:		texlive-bibtexu
-Version:	20180303
-Release:	2
+Version:	64491
+Release:	1
 Summary:	TeXLive bibtexu package
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibtexu.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibtexu.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibtexu.r64491.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bibtexu.doc.r64491.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,14 +17,12 @@ TeXLive bibtexu package.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdistdir}/doc/bibtexu/00readme.txt
-%doc %{_texmfdistdir}/doc/bibtexu/HISTORY
-%doc %{_texmfdistdir}/doc/bibtexu/csfile.txt
-%doc %{_texmfdistdir}/doc/bibtexu/file_id.diz
+%doc %{_texmfdistdir}/doc/bibtexu
+%doc %{_texmfdistdir}/doc/man/man1/*
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
