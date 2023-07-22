@@ -1,5 +1,5 @@
 Name:		texlive-bibtexu
-Version:	64491
+Version:	66186
 Release:	1
 Summary:	TeXLive bibtexu package
 Group:		Publishing
